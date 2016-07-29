@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Airbnb home</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Your banner code -->
+
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+      <div class="banner-content">
+        <h1>Trump for president</h1>
+        <p>The best you can get</p>
+        <a href= "http://trumpdonald.org/" class="btn btn-primary btn-lg" target="_blank">Pouet!</a>
+      </div>
+    </div>
+
+    <!-- Your features code -->
+
+    <div class="text-center padded features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-3">
+            <i><img src="images/heart.png" alt=""></i>
+            <h2>A great Father</h2>
+            <p>“I’ve said if Ivanka weren’t my daughter, perhaps I’d be dating her.”
+            </p>
+          </div>
+          <div class="col-xs-3">
+            <i><img src="images/beer.png" alt=""></i>
+            <h2>A model of Good Neighbour</h2>
+            <p>“When Mexico sends its people, they’re not sending the best. They’re bring crime. They’re rapists… And some, I assume, are good people.”
+            </p>
+          </div>
+          <div class="col-xs-3">
+            <i><img src="images/dollar.png" alt=""></i>
+            <h2>Humility personified</h2>
+            <p>"My IQ is one of the highest — and you all know it! Please don't feel so stupid or insecure; it's not your fault."
+            </p>
+          </div>
+          <div class="col-xs-3">
+            <i><img src="images/globe.png" alt=""></i>
+            <h2>Focused on what matters</h2>
+            <p>“An ‘extremely credible source’ has called my office and told me that Barack Obama’s birth certificate is a fraud"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your next trip -->
+ <div class="wrapper-grey">
+    <div class="container">
+     <h2 class="text-center">Everybody loves the Donald</h2>
+     <div class="row">
+       <div class="col-xs-12 col-sm-4">
+         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+           <div class="card-category">Fan number 1</div>
+           <div class="card-description">
+             <h2>in Paris</h2>
+             <p>Trump il est super !</p>
+           </div>
+           <img class="card-user avatar" src="images/seb.jpg">
+           <a class="card-link" href="#" ></a>
+         </div>
+       </div>
+       <div class="col-xs-12 col-sm-4">
+         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+           <div class="card-category">Fan absolu</div>
+           <div class="card-description">
+             <h2>in Brussels</h2>
+             <p>Donald adore la Belgique !</p>
+           </div>
+           <img class="card-user avatar" src="images/anne.jpg">
+           <a class="card-link" href="#" ></a>
+         </div>
+       </div>
+       <div class="col-xs-12 col-sm-4">
+         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+           <div class="card-category">Authentic Fan</div>
+           <div class="card-description">
+             <h2>in London</h2>
+             <p>Trump + brexit = <3 </p>
+           </div>
+           <img class="card-user avatar" src="images/romain.jpeg">
+           <a class="card-link" href="#" ></a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+    <!-- Your newsletter code -->
+
+    <div class="text-center padded newsletter">
+      <h2>Get Donald's quotes by mail</h2>
+      <form class="form-inline">
+        <input type="email" placeholder="vladoo@kremlin.ru" class="form-control">
+        <input type="submit" value="Subscribe" class="btn btn-primary btn-bordered btn-bordered-primary">
+      </form>
+    </div>
+
+    <!-- The Map -->
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(40.7623011,-73.973758);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "Trump Power!"
+    });
+    </script>
+
+    <!-- Your footer code -->
+
+    <div id="footer">
+      <ul class="list-inline">
+        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+        <p>Built during Le Wagon São Paulo Bootcamp - July 2016</p>
+      </ul>
+    </div>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
